@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Tec Wafle | Innovación Aeroespacial 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1C1613',
+                            brown: '#3D1E10',
+                            gold: '#E69D35',
+                            cream: '#F8E9D2',
+                            accent: '#D97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #F8E9D2 0%, #E69D35 50%, #D97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .waffle-pattern {
+            background-color: #1C1613;
+            background-image: linear-gradient(rgba(230, 157, 53, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(230, 157, 53, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            display: inline-block;
+        }
+        .hero-logo-icon {
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-brand-cream font-sans antialiased selection:bg-brand-gold selection:text-brand-dark waffle-pattern">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="logo-icon flex-shrink-0">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-xl tracking-wider text-white">ROCKET TEC</span>
+                    <span class="text-xs text-brand-gold font-semibold tracking-widest -mt-1">WAFLE • SINALOA</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-brand-cream/80">
+                <a href="#inicio" class="hover:text-brand-gold transition-colors">Inicio</a>
+                <a href="#tecnologia" class="hover:text-brand-gold transition-colors">Tecnología Wafle</a>
+                <a href="#cohetes" class="hover:text-brand-gold transition-colors">Modelos 2026</a>
+                <a href="#tec-sinaloa" class="hover:text-brand-gold transition-colors">Tec de Monterrey</a>
+            </nav>
+            <div>
+                <a href="#contacto" class="bg-brand-gold text-brand-dark font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-500 transition-all shadow-lg shadow-brand-gold/20 text-sm">
+                    Agendar Lanzamiento
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-gold/30 bg-brand-brown/40 text-brand-gold text-xs font-semibold uppercase tracking-wider">
+                    <span>MISIÓN 2026</span>
+                    <span>•</span>
+                    <span>TEC DE MONTERREY CAMPUS SINALOA</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-display font-extrabold tracking-tight leading-tight">
+                    Despegando al futuro del <span class="gradient-text">sabor y la tecnología</span>
+                </h1>
+                <p class="text-lg text-brand-cream/80 max-w-xl leading-relaxed">
+                    Fabricación avanzada de cohetes de alta eficiencia estructural inspirada en la arquitectura térmica y aerodinámica del entramado Wafle.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#cohetes" class="bg-brand-gold text-brand-dark font-bold px-8 py-3.5 rounded-xl hover:bg-yellow-500 transition-all shadow-lg shadow-brand-gold/20">
+                        Explorar Flota
+                    </a>
+                    <a href="#tecnologia" class="border border-brand-gold/40 text-brand-cream font-semibold px-8 py-3.5 rounded-xl hover:bg-brand-brown/50 transition-all">
+                        Ver Patente
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center items-center">
+                <div class="absolute w-72 h-72 bg-brand-gold/20 rounded-full blur-3xl -z-10"></div>
+                <div class="p-8 rounded-3xl border border-brand-gold/30 bg-brand-brown/30 backdrop-blur-xl text-center space-y-6 max-w-sm w-full">
+                    <div class="hero-logo-icon mx-auto py-2 hover:scale-105 transition-transform">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-brand-gold uppercase tracking-widest">Cohete Insignia</span>
+                        <h3 class="text-2xl font-bold font-display text-white">WAFLE-1 SINALOA</h3>
+                        <p class="text-xs text-brand-cream/70">Módulo de propulsión de aleación ligera y reja de disipación térmica.</p>
+                    </div>
+                    <div class="pt-4 border-t border-brand-gold/20 flex justify-around text-center">
+                        <div>
+                            <div class="text-lg font-bold text-brand-gold">2026</div>
+                            <div class="text-[10px] text-brand-cream/60 uppercase">Lanzamiento</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-bold text-brand-gold">100%</div>
+                            <div class="text-[10px] text-brand-cream/60 uppercase">Sinaloense</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnología Wafle Section -->
+    <section id="tecnologia" class="py-20 border-t border-brand-gold/10 bg-brand-brown/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl md:text-4xl font-display font-bold">Tecnología Patente WAFLE</h2>
+                <p class="text-brand-cream/70">Diseño estructural de grilla de rejilla optimizada para maximizar resistencia y disipar calor hipersónico.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-brand-dark/80 border border-brand-gold/20 space-y-4 text-center md:text-left">
+                    <div class="w-14 h-14 mx-auto md:mx-0 p-2 rounded-xl bg-brand-gold/10 border border-brand-gold/30">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-display">Matriz Térmica</h3>
+                    <p class="text-sm text-brand-cream/70">Estructura celular en rejilla inspirada en gofres que atrapa capas límite y reduce la resistencia aerodinámica.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-brand-dark/80 border border-brand-gold/20 space-y-4 text-center md:text-left">
+                    <div class="w-14 h-14 mx-auto md:mx-0 p-2 rounded-xl bg-brand-gold/10 border border-brand-gold/30">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-display">Propulsión Dulce</h3>
+                    <p class="text-sm text-brand-cream/70">Combustible de biomasa refinada de alta densidad energética desarrollado en laboratorios de Sinaloa.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-brand-dark/80 border border-brand-gold/20 space-y-4 text-center md:text-left">
+                    <div class="w-14 h-14 mx-auto md:mx-0 p-2 rounded-xl bg-brand-gold/10 border border-brand-gold/30">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-display">Escudo Recubierto</h3>
+                    <p class="text-sm text-brand-cream/70">Aleación protectora color caramelo resistente a más de 3,000°C durante el reingreso atmosférico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelos 2026 Section -->
+    <section id="cohetes" class="py-20 border-t border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl md:text-4xl font-display font-bold">Flota de Cohetes 2026</h2>
+                <p class="text-brand-cream/70">Modelos diseñados e impulsados desde el Tec de Monterrey Campus Sinaloa.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-brand-brown/20 border border-brand-gold/20 space-y-4 flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-white text-center">WAFLE-1</h3>
+                        <p class="text-xs text-brand-gold text-center uppercase tracking-widest mb-4">Cohete Suborbital</p>
+                        <p class="text-sm text-brand-cream/70">Diseñado para pruebas de microgravedad con revestimiento térmico crujiente.</p>
+                    </div>
+                    <div class="pt-4 border-t border-brand-gold/10 text-xs text-brand-cream/60 flex justify-between">
+                        <span>Carga Útil: 500 kg</span>
+                        <span>Alcance: 120 km</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-brown/40 border border-brand-gold/50 space-y-4 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-brand-gold text-brand-dark text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Insignia</div>
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-white text-center">WAFLE-X SINALOA</h3>
+                        <p class="text-xs text-brand-gold text-center uppercase tracking-widest mb-4">Lanzador Orbital</p>
+                        <p class="text-sm text-brand-cream/70">Unidad reutilizable de 2 etapas con aletas de grilla Wafle para máxima maniobrabilidad.</p>
+                    </div>
+                    <div class="pt-4 border-t border-brand-gold/10 text-xs text-brand-cream/60 flex justify-between">
+                        <span>Carga Útil: 2.5 Ton</span>
+                        <span>Alcance: Órbita Baja</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-brown/20 border border-brand-gold/20 space-y-4 flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-white text-center">NEBULA WAFLE</h3>
+                        <p class="text-xs text-brand-gold text-center uppercase tracking-widest mb-4">Exploración Espacio Profundo</p>
+                        <p class="text-sm text-brand-cream/70">Propulsor iónico alimentado por matrices fotovoltaicas de alta eficiencia.</p>
+                    </div>
+                    <div class="pt-4 border-t border-brand-gold/10 text-xs text-brand-cream/60 flex justify-between">
+                        <span>Carga Útil: 1.2 Ton</span>
+                        <span>Alcance: Interplanetario</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tec de Monterrey Sinaloa Section -->
+    <section id="tec-sinaloa" class="py-20 border-t border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-brand-brown/60 to-brand-dark border border-brand-gold/30 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-4 max-w-2xl">
+                    <span class="text-xs font-semibold text-brand-gold uppercase tracking-widest">Alianza Estratégica</span>
+                    <h2 class="text-3xl font-display font-bold">Desarrollado en Tec de Monterrey Campus Sinaloa</h2>
+                    <p class="text-brand-cream/80 text-sm leading-relaxed">
+                        Nuestra empresa combina el espíritu emprendedor, la ingeniería espacial y el talento joven del Tecnológico de Monterrey en Sinaloa para la era de lanzamientos 2026.
+                    </p>
+                </div>
+                <div class="text-center md:text-right">
+                    <div class="text-4xl font-extrabold text-brand-gold font-display">2026</div>
+                    <div class="text-xs text-brand-cream/60 uppercase tracking-wider">Año de Despegue Oficial</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="py-12 border-t border-brand-gold/20 bg-brand-dark text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 flex-shrink-0">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+    <circle cx="100" cy="100" r="95" fill="#1C1613" stroke="#E69D35" stroke-width="6"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F8E9D2" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <path d="M45 60 L47 65 L52 67 L47 69 L45 74 L43 69 L38 67 L43 65 Z" fill="#F8E9D2"/>
+    <path d="M155 80 L156 83 L159 84 L156 85 L155 88 L154 85 L151 84 L154 83 Z" fill="#F8E9D2"/>
+    <path d="M50 130 L51 132 L53 133 L51 134 L50 136 L49 134 L47 133 L49 132 Z" fill="#E69D35"/>
+    <path d="M150 135 L151 137 L153 138 L151 139 L150 141 L149 139 L147 138 L149 137 Z" fill="#E69D35"/>
+
+    <path d="M75 145 C60 150 50 135 35 150 C20 165 40 180 70 170 C90 185 110 185 130 170 C160 180 180 165 165 150 C150 135 140 150 125 145 Z" fill="#F8E9D2" opacity="0.9"/>
+    <path d="M85 150 C75 160 80 175 100 170 C120 175 125 160 115 150 Z" fill="#E69D35"/>
+    <path d="M92 152 C88 160 92 168 100 166 C108 168 112 160 108 152 Z" fill="#D97706"/>
+
+    <path d="M68 105 C60 115 50 135 55 145 C70 145 78 130 82 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M132 105 C140 115 150 135 145 145 C130 145 122 130 118 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="3"/>
+
+    <path d="M80 80 C80 55 100 40 100 40 C100 40 120 55 120 80 L122 120 C122 130 112 145 100 150 C88 145 78 130 78 120 Z" fill="#E69D35" stroke="#3D1E10" stroke-width="4"/>
+    
+    <path d="M85 70 L115 70 M82 85 L118 85 M80 100 L120 100 M82 115 L118 115 M86 130 L114 130" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 60 L90 135 M100 45 L100 145 M110 60 L110 135" stroke="#3D1E10" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="100" cy="85" r="14" fill="#3D1E10" stroke="#E69D35" stroke-width="3"/>
+    <circle cx="100" cy="85" r="8" fill="#1C1613"/>
+    <circle cx="97" cy="82" r="3" fill="#F8E9D2"/>
+
+    <path d="M82 60 C80 40 95 20 100 15 C105 20 120 40 118 60 C110 65 90 65 82 60 Z" fill="#F8E9D2" stroke="#3D1E10" stroke-width="3"/>
+    <path d="M100 15 C108 25 115 35 112 45 C108 50 102 42 100 35 C98 42 92 50 88 45 C85 35 92 25 100 15 Z" fill="#3D1E10"/>
+    <path d="M82 55 C88 60 95 52 100 58 C105 52 112 60 118 55 C116 63 84 63 82 55 Z" fill="#3D1E10"/>
+</svg>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg text-white">ROCKET TEC WAFLE</span>
+                    <p class="text-xs text-brand-cream/60">© 2026 Tec de Monterrey Sinaloa. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <div class="flex gap-6 text-sm text-brand-cream/70">
+                <a href="#" class="hover:text-brand-gold">Privacidad</a>
+                <a href="#" class="hover:text-brand-gold">Términos</a>
+                <a href="#" class="hover:text-brand-gold">Sinaloa, México</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
